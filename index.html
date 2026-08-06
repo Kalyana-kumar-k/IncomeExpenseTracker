@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Tracker</title>
+    <link rel="stylesheet" href="./partials/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="income-expense">
+
+            <div class="balance">
+                <h1>Income Expense Tracking</h1>
+                <h3>Balance</h3>
+                <h2 class="bal" id="bal">00.00</h2>
+            </div>
+
+            <div class="inc-exp-amount">
+                <div class="inc">
+                    <h4>Income</h4>
+                    <p class="inc-amount" id="inc-amount">00.00</p>
+                </div>
+                <div class="exp">
+                    <h4>Expense</h4>
+                    <p class="exp-amount" id="exp-amount">00.00</p>
+                </div>
+            </div>
+
+            <div class="inc-exp-input">
+                <form action="#" id="form">
+                    <div class="description">
+                        <label for="desc">Description</label>
+                        <input type="text" placeholder="Enter description" name="desc" id="desc">
+                    </div>
+                    <div class="input-amount">
+                        <label for="inp-amt">Amount</label>
+                        <input type="number" name="inp-amt" id="inp-amt">
+                    </div>
+                    <button type="submit" id="add-desc">Add Transaction</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="transactions">
+            <h2>Transaction Details</h2>
+            <div class="transaction-lists">
+                <ul id="trans">
+                    <!-- <li class="trans-inc">
+                        Salary
+                        <span class="trans-Amount">35000</span>
+                        <button class="btn-del">X</button>
+                    </li>
+                    <li class="trans-exp">
+                        petrol
+                        <span class="trans-Amount">900</span>
+                        <button class="btn-del">X</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./partials/script.js"></script>
+</body>
+</html>
